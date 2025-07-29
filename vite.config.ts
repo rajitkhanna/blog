@@ -1,7 +1,6 @@
 import { tanstackStart } from "@tanstack/react-start/plugin/vite";
 import { defineConfig } from "vite";
 import tsConfigPaths from "vite-tsconfig-paths";
-import { cloudflare } from "@cloudflare/vite-plugin";
 import viteReact from "@vitejs/plugin-react";
 
 export default defineConfig({
@@ -12,8 +11,7 @@ export default defineConfig({
     tsConfigPaths({
       projects: ["./tsconfig.json"],
     }),
-    tanstackStart({ target: "cloudflare-pages", customViteReactPlugin: true }),
+    tanstackStart({ target: "cloudflare-module", customViteReactPlugin: true }),
     viteReact(),
-    cloudflare(),
   ],
 });

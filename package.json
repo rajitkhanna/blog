@@ -9,7 +9,6 @@
     "start": "node .output/server/index.mjs"
   },
   "dependencies": {
-    "@cloudflare/vite-plugin": "^1.10.2",
     "@tanstack/react-router": "^1.130.2",
     "@tanstack/react-router-devtools": "^1.130.2",
     "@tanstack/react-start": "^1.130.3",
